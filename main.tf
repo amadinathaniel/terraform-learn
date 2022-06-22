@@ -75,6 +75,26 @@ resource "aws_default_security_group" "default-sg" {
     }
 }
 
+/*
+resource "aws_security_group_rule" "web-http" {
+  security_group_id = aws_vpc.myapp-vpc.default_security_group_id
+  type              = "ingress"
+  from_port         = 8080
+  to_port           = 8080
+  protocol          = "tcp"
+  cidr_blocks       = ["0.0.0.0/0"]
+}
+
+resource "aws_security_group_rule" "server-ssh" {
+  security_group_id = aws_vpc.myapp-vpc.default_security_group_id
+  type              = "ingress"
+  from_port         = 22
+  to_port           = 22
+  protocol          = "tcp"
+  cidr_blocks       = [var.my_ip]
+}
+*/
+
 data "aws_ami" "latest-amazon-linux-image" {
     most_recent = true
     owners = ["amazon"]
