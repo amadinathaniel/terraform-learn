@@ -17,3 +17,6 @@ terraform.rc
 
 # Ignore crash logs
 crash.log
+
+# Ignore infracost files
+*.infracost*

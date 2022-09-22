@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: .github/workflows/infracost.yaml
+  checksum: 028d9ad7ec46016f088cad314b34655132573fa857d5d08721026b05c4a8acd6
+version: "1.0"
