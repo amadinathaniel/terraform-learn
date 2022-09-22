@@ -14,3 +14,12 @@
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Ignore crash logs
+crash.log
+
+# Ignore infracost files
+*.infracost*
+
+# Ignore talisman files
+*.talismanrc*
