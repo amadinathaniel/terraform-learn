@@ -20,3 +20,6 @@ crash.log
 
 # Ignore infracost files
 *.infracost*
+
+# Ignore talisman files
+*.talismanrc*
